@@ -28,7 +28,11 @@ Describe the current rule, the actual or hypothetical scenario, the observed or 
 
 ## Status of the framework
 
-DDLS v2.1 is published as an operational engineering playbook. It is not an assurance that every possible scenario has been validated or that its guidance replaces project-specific controls.
+**DDLS v2.2** is the current experimental engineering playbook. [DDLS v2.1](docs/DDLS-v2.1.md) is preserved as a historical reference. The guidance has not been comprehensively validated and does not replace stronger project-specific controls.
+
+## Release maintenance
+
+Maintainers should use [the release checklist](docs/RELEASING.md). Keep one top-level `Unreleased` changelog section; update active guidance while preserving archived versioned documents.
 
 ## Licensing and credit
 

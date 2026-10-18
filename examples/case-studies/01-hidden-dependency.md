@@ -1,8 +1,16 @@
 # Case Study 01 — A Hidden Infrastructure Dependency
 
-**DDLS v2.1 | Synthetic educational scenario | Decisions:** `DIAGNOSE`, `FREEZE`, `SHIFT`, nested enablement, optional `PROMOTE`.
+**DDLS v2.2 | Synthetic educational scenario | Decisions:** `DIAGNOSE`, `FREEZE`, `SHIFT`, nested enablement, optional `PROMOTE`.
 
 > This case is fictional. It contains no source code, measurements, host information, configuration, or incident findings from a private system. All outcomes below are **conditional walkthrough steps**, not reports of tests that actually ran.
+
+## DDLS v2.2 governance and budget
+
+**Mode:** `MANAGED_SHIFT` for a confirmed bounded prerequisite; increase to `GOVERNED` before any high-risk, shared-state, or production-affecting change. **No mode elevation is an authorization grant.**
+
+**Resource envelope:** `L0` owns one objective-level execution budget. `L1` and `L2` only receive sub-allocations of its **remaining** budget, with a reserve for validating and resuming `L0`. Token/cost consumption is `UNKNOWN` without trusted metering. The [companion synthetic contract](../contracts/01-return-contracts.yaml) records allocation as `NOT_EVALUATED`.
+
+**Early falsification gate:** Measure before implementing isolation. If controlled observations **disprove** shared-resource contention, cancel the proposed `L1` plan and remain in `DIAGNOSE / REPLAN`; do not create `L2` solely because it appears in the hypothetical graph. Review the overall budget before another shift.
 
 ## 1. Engineering context
 

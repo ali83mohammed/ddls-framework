@@ -1,7 +1,16 @@
-# DDLS v2.1 — Two nested synthetic return contracts for Case Study 01.
+# DDLS v2.2 — Two nested synthetic return contracts for Case Study 01.
 # Illustrative requirements only. No tests were run for this example.
 # All evidence fields are deliberately pending: never infer PASS from this document.
+ddls_version: "2.2"
 scenario: "01-hidden-dependency"
+governance_mode: "MANAGED_SHIFT"  # Escalate to GOVERNED if the work becomes high risk.
+execution_budget:
+  parent_objective: "CONTROL-ACTION"
+  policy_template: "../../templates/execution-budget.yaml"
+  allocation_status: "NOT_EVALUATED"
+  measured_usage: "UNKNOWN"
+  return_reserve: "REQUIRED"
+  additional_budget_authority: "APPROVAL_REQUIRED"
 synthetic: true
 reference_case: "../case-studies/01-hidden-dependency.md"
 return_contracts:

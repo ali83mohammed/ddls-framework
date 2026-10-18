@@ -8,7 +8,7 @@ assignees: []
 
 ## DDLS version
 
-2.1
+2.2 (current; specify v2.1 or another version if applicable)
 
 ## Scenario
 

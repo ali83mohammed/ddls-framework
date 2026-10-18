@@ -1,6 +1,11 @@
-# DDLS v2.1 — Synthetic no-shift diagnostic record.
+# DDLS v2.2 — Synthetic no-shift diagnostic record.
 # Evidence IDs here are teaching placeholders, not uploaded real-world results.
+ddls_version: "2.2"
 scenario: "03-no-shift-required"
+governance_mode: "TRANSPARENT"
+execution_budget:
+  child_allocation: "NOT_APPLICABLE_NO_SHIFT"
+  measured_usage: "UNKNOWN"
 synthetic: true
 reference_case: "../case-studies/03-no-shift-required.md"
 diagnostic_decision:

@@ -1,8 +1,14 @@
 # Case Study 02 — Development Complete, Deployment Blocked
 
-**DDLS v2.1 | Synthetic educational scenario | Decisions:** `VALIDATE`, `STOP`, `ESCALATE`, `WAIT`.
+**DDLS v2.2 | Synthetic educational scenario | Decisions:** `VALIDATE`, `STOP`, `ESCALATE`, `WAIT`.
 
 > Fictional systems, records, and decision outcomes. This case is not a report of a particular deployment or restore incident; it provides no real source, secrets, lifecycle identifiers, environment values, or observed test results.
+
+## DDLS v2.2 governance and budget
+
+**Mode:** `GOVERNED`, because a deployment attempt would affect a protected environment even without a SHIFT. Existing production authority remains `NOT_GRANTED`. Any objective-level budget or release-allocation policy is **NOT_EVALUATED**, not newly granted by this example.
+
+The [authorization gate record](../contracts/02-authorization-gate.yaml) preserves that distinction. No tool operation should be initiated merely because a document says a development step is complete.
 
 ## 1. Engineering context
 

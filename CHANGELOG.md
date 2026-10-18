@@ -1,51 +1,45 @@
 # Changelog
 
-## [Unreleased] — v2.2 documentation and evaluation readiness
+All notable changes to DDLS are recorded here, following [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). These are documentation releases, not evidence of experimentally validated performance.
 
-- Added a one-page Core, explicit falsifiable hypothesis, and five-question blocker qualification gate.
-- Added a proposed controlled evaluation protocol (4 scenarios × 2 arms × 5 runs = 40); **no benchmark runs or results claimed**.
-- Added an enforcement map linking DDLS rules to existing GitHub/host controls without implementing validators or hooks.
-- Added lightweight Codex, Claude Code, and Cursor integration guides and an optional PR SHIFT section.
-- Added a synthetic counterexample showing excessive DDLS overhead and its correct no-SHIFT resolution.
-- Fixed README's stale v2.1 label; retained the full v2.2 reference and existing dual-license mapping.
+## [Unreleased]
 
-## [2.2] — 2026-10-18 — Adaptive Workflow & Bounded Agent Execution
+### Added
+- One-page DDLS Core, falsifiable working hypothesis, and five-question blocker qualification.
+- Proposed comparison protocol (4 scenarios × 2 groups × 5 runs = 40); **no experiments or results claimed**.
+- Enforcement mapping for existing host/repository controls, without introducing a validator, CLI, or hook implementation.
+- Codex, Claude Code, and Cursor adoption guides; optional PR SHIFT template.
+- Synthetic negative example illustrating avoidable DDLS overhead.
+- Maintainer-facing release checklist for this already published repository.
 
-- Made TRANSPARENT governance the default for normal work; no mandatory YAML or loop paperwork for ordinary fixes.
-- Added MANAGED_SHIFT and GOVERNED modes, selected by blocker and risk rather than task count.
-- Introduced an objective-level, non-replenishing execution budget shared by nested and parallel agents, with protected resumption reserve.
-- Added progress gates, suggested review thresholds for depth and total shifts, and evidence-aware retry controls.
-- Clarified that tokens/costs must come from trustworthy metering and otherwise remain UNKNOWN; agent self-reports are not technical enforcement.
-- Simplified the quickstart, standing agent rules, task prompt, and optional templates. Preserved v2.1 documentation as a historical reference.
-- Explicitly excluded a CLI, validator, and ddls-check from this release.
-- Maintained the existing dual-license policy and original author attribution.
+### Changed
+- Unified active v2.2 examples, issue template, contributor guidance, and documentation links while keeping the v2.1 historical playbook.
+- Changed LICENSE's title to be version-neutral, preserving both existing licenses and all attribution obligations.
+- Replaced the one-time GitHub publishing tutorial; corrected case-study index formatting and case count.
 
-## [Unreleased] — Documentation examples
+## [2.2] — 2026-10-18
 
-- Added three fully synthetic DDLS v2.1 case studies covering nested enabling work, a blocked deployment gate, and correct no-shift diagnosis.
-- Added illustrative contracts and an example index with explicit evidence and source-protection disclaimers.
-- No change to DDLS v2.1 rules, license terms, or deployment authority.
+### Added
+- Risk-proportional TRANSPARENT, MANAGED_SHIFT, and GOVERNED modes.
+- Shared objective-level budget for nested/parallel agent work, with progress gates and return capacity.
+- Three synthetic case studies, companion illustrative contracts, and a case index.
+
+### Changed
+- Clarified that missing trustworthy token/cost telemetry must be reported as UNKNOWN.
+- Preserved v2.1 as an archive; simplified agent instructions and quickstart.
+- Explicitly deferred ddls-check and other enforcement tools.
+- Retained dual licensing and author attribution.
 
 ## [2.1] — 2026
 
-**Agent Reliability & Execution Safety**
-
-- Added evidence-aware retry budgeting (default: three substantially similar repairs per hypothesis).
-- Distinguished context distillation from context deletion.
-- Added source, contract, schema, runtime, authority, and evidence drift considerations.
-- Clarified that a DAG alone does not imply safe concurrency.
-- Replaced blanket teardown/rollback language with risk-aware side-effect reconciliation.
-- Explicitly separated loop state, delivery state, and decision tokens.
-- Added multi-agent ownership leases and safeguards against stale writers.
-- Defined human intervention and agent handoff expectations.
-- Clarified independent development, integration, deployment, and operational authorities.
-- Organized full playbook, quickstart, agent instructions, templates, and an illustrative example.
-- Published documentation under CC BY 4.0 and reusable agent materials under Apache-2.0, with explicit attribution to Ali Mohammed (2026).
-- Corrected GitHub publication layout, relative links, and official attribution URL without changing the DDLS engineering rules.
+### Added
+- Evidence-aware retries, context distillation, drift checks, multi-agent ownership and handoff.
+- Independent development, integration, deployment, and operational boundaries.
+- Risk-aware reconciliation instead of unconditional rollback.
+- Initial documentation layout and attribution corrections.
 
 ## [2.0] — Historical baseline
 
-- Introduced dependency graph alongside nested loop stack.
-- Added dependency types, enabling strategies, return contracts, recovery governance, and adoption profiles.
+- Introduced dependency graph and nested loop stack, return contracts, recovery governance, and adoption profiles.
 
-_The historical baseline entries summarize the evolution described in the project design discussion; they are not claims of independently audited software releases._
+_The v2.0 history describes design evolution, not an independently audited software release._

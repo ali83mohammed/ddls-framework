@@ -1,8 +1,14 @@
 # Case Study 03 — The Blocker That Did Not Require a Shift
 
-**DDLS v2.1 | Synthetic educational scenario | Decisions:** `DIAGNOSE`, `WAIT`, optionally `FIX`, then `CONTINUE`.
+**DDLS v2.2 | Synthetic educational scenario | Decisions:** `DIAGNOSE`, `WAIT`, optionally `FIX`, then `CONTINUE`.
 
 > This is a fictional, privacy-preserving teaching case. It contains no device addresses, vendor-specific privilege strings, credentials, customer information, configuration exports, or actual operational logs.
+
+## DDLS v2.2 governance and budget
+
+**Mode:** Start in `TRANSPARENT` for code diagnosis and authorized read-only tests: no return contract, child task, or YAML is required. The [companion synthetic decision record](../contracts/03-diagnostic-decision.yaml) illustrates `WAIT` for an external operator and explicitly records `NO_SHIFT`. **No child budget is allocated**, and no access-changing permission is implied.
+
+If the task later requires sensitive operations, independently move to `GOVERNED` and seek actual authority; do not upgrade the operation through paperwork.
 
 ## 1. Engineering context
 

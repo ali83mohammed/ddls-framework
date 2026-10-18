@@ -1,10 +1,10 @@
-# DDLS v2.1 — Engineering Case Studies
+# DDLS v2.2 — Engineering Case Studies
 
 These examples show how an engineer or an AI coding agent can **choose the appropriate DDLS decision**, not merely how to perform a SHIFT.
 
 > **Disclosure and source protection:** All scenarios, names, identifiers, artifacts, system relationships, and decision traces in this directory are **synthetic teaching materials**. They are informed by general patterns found in complex software systems. They are **not** reproductions, verified incident reports, benchmark results, proprietary source code, private configuration, or evidence from a specific product. Placeholder evidence is not proof that tests ran.
 
-The case studies do not require access to any private repository. Use the [current DDLS v2.2 playbook](../docs/DDLS-v2.2.md) as the governing reference. These synthetic cases were authored under v2.1; their decisions remain educational examples rather than machine-enforced policies. v2.2 adds lightweight governance modes and shared budget rules; the earlier case narratives do not claim to demonstrate measured token usage.
+The case studies do not require access to any private repository. Use the [current DDLS v2.2 playbook](../docs/DDLS-v2.2.md) as the governing reference. The initial cases were drafted under v2.1 and have been annotated for v2.2's governance modes and optional budget rules. All evidence remains **illustrative and unevaluated**; these cases do not demonstrate measured token usage, permission grants, or executed tests.
 
 ## Case-study index
 
@@ -13,7 +13,6 @@ The case studies do not require access to any private repository. Use the [curre
 | [01 — Hidden dependency in background processing](case-studies/01-hidden-dependency.md) | `FREEZE → SHIFT`, nested enablement, conditional `PROMOTE` | Avoid solving infrastructure blockers through feature-specific patches | [Illustrative return contracts](contracts/01-return-contracts.yaml) |
 | [02 — Development complete, deployment blocked](case-studies/02-deployment-gate.md) | `STOP / ESCALATE / WAIT` | Development acceptance, integration, and production authorization are separate | [Authorization gate](contracts/02-authorization-gate.yaml) |
 | [03 — The blocker that did not require a shift](case-studies/03-no-shift-required.md) | `DIAGNOSE → WAIT → CONTINUE` | Diagnose external capabilities before creating unnecessary enabling code | [Diagnostic decision](contracts/03-diagnostic-decision.yaml) |
-
 | [04 — Excessive process overhead](case-studies/04-overhead-counterexample.md) | `FIX` in TRANSPARENT mode | Why unnecessary DDLS paperwork is itself a failure mode | No YAML required |
 
 The earlier [backup-package verification walkthrough](backup-package-verification.md) remains available as a shorter linear-SHIFT introduction.

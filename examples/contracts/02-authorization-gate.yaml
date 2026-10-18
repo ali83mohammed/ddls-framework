@@ -1,5 +1,12 @@
-# DDLS v2.1 — Synthetic gate state, NOT a deployment approval.
+# DDLS v2.2 — Synthetic gate state, NOT a deployment approval.
+ddls_version: "2.2"
 scenario: "02-deployment-gate"
+governance_mode: "GOVERNED"
+execution_budget:
+  policy_template: "../../templates/execution-budget.yaml"
+  allocation_status: "NOT_EVALUATED"
+  measured_usage: "UNKNOWN"
+  budget_change_authority: "APPROVAL_REQUIRED"
 synthetic: true
 reference_case: "../case-studies/02-deployment-gate.md"
 development_loop:

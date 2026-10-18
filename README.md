@@ -36,12 +36,12 @@ DDLS does not require a shift for every bug. Routine issues stay within the curr
 | [AGENTS.md](AGENTS.md) | Standing instructions for AI coding agents |
 | [Task-start prompt](prompts/task-start.md) | Scope, acceptance, and authority for a particular task |
 | [Templates](templates/) | Primary-loop, shift, checkpoint, return-contract, and reporting records |
-| [Case-study collection](examples/README.md) | Three synthetic decision paths: nested SHIFT, deployment STOP, and NO SHIFT |
+| [Case-study collection](examples/README.md) | Four synthetic cases: nested SHIFT, deployment STOP, NO SHIFT, and excess overhead |
 | [Worked example](examples/backup-package-verification.md) | Freeze / shift / enable / validate / resume without production changes |
-| [Publishing guide](docs/PUBLISHING.md) | GitHub setup and release tagging |
 | [License](LICENSE) and [Attribution](ATTRIBUTION.md) | Permitted reuse and credit to the framework author |
 | [Change history](CHANGELOG.md) | Version notes |
 | [Contributing](CONTRIBUTING.md) | How to report issues and contribute improvements |
+| [Release maintenance](docs/RELEASING.md) | Maintainer checklist for releases and documentation consistency |
 
 ## The DDLS decision path
 
