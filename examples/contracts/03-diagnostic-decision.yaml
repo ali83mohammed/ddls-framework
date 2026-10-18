@@ -1,0 +1,32 @@
+# DDLS v2.1 — Synthetic no-shift diagnostic record.
+# Evidence IDs here are teaching placeholders, not uploaded real-world results.
+scenario: "03-no-shift-required"
+synthetic: true
+reference_case: "../case-studies/03-no-shift-required.md"
+diagnostic_decision:
+  parent_loop: "SNAPSHOT-JOB"
+  initial_state: "ACTIVE"
+  suspected_blocker: "Operator-managed endpoint capability or access restriction"
+  evidence_to_collect:
+    - "Isolated authorized fixture behavior"
+    - "Non-destructive endpoint capability response, when permitted"
+    - "Applicable access-policy ownership"
+  evidence_status: "NOT_EVALUATED"
+  decision:
+    action: "WAIT"
+    reason: "No proven missing software capability; external authority required"
+    shift_performed: false
+    enabling_loop: null
+  authority:
+    development: "GRANTED"
+    operational_actions: "NOT_GRANTED"
+    endpoint_permission_changes: "NOT_GRANTED"
+  external_wait:
+    responsible_party: "Authorized endpoint operator"
+    condition: "Operator decision on required capability"
+    recheck_trigger: "Documented operator response"
+    permitted_next_action: "Authorized read-only capability verification"
+  result:
+    parent_state: "WAITING_EXTERNAL"
+    code_completion: "NOT_CLAIMED"
+    production_change: false

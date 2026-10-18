@@ -41,6 +41,8 @@ For a local fix: **Result / Tests / Changes / Risks / Next Action**.
 
 For a shift or high-risk transition: use [`templates/execution-report.md`](../templates/execution-report.md).
 
+For worked decision paths, see the [case-study collection](../examples/README.md). These scenarios are synthetic examples, not observed test results.
+
 ## Frequently confused terms
 
 - **State vs. decision:** `FROZEN` is a state; `FREEZE` is the decision/event leading toward it.

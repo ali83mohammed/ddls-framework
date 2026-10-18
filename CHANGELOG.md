@@ -1,5 +1,11 @@
 # Changelog
 
+## [Unreleased] — Documentation examples
+
+- Added three fully synthetic DDLS v2.1 case studies covering nested enabling work, a blocked deployment gate, and correct no-shift diagnosis.
+- Added illustrative contracts and an example index with explicit evidence and source-protection disclaimers.
+- No change to DDLS v2.1 rules, license terms, or deployment authority.
+
 ## [2.1] — 2026
 
 **Agent Reliability & Execution Safety**

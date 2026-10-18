@@ -1,0 +1,57 @@
+# DDLS v2.1 — Two nested synthetic return contracts for Case Study 01.
+# Illustrative requirements only. No tests were run for this example.
+# All evidence fields are deliberately pending: never infer PASS from this document.
+scenario: "01-hidden-dependency"
+synthetic: true
+reference_case: "../case-studies/01-hidden-dependency.md"
+return_contracts:
+  - id: "RC-OBS"
+    parent_loop: "ISOLATED-SCHEDULING"
+    enabling_loop: "WORKLOAD-OBSERVABILITY"
+    required_capability:
+      description: "Separate queued wait from execution time in isolated test workloads"
+      interface: "TestWorkloadObservation"
+    acceptance:
+      - "Distinguishable queue and execution spans in an isolated fixture"
+      - "No sensitive payload logging or production instrumentation"
+      - "Regression tests for the observation interface"
+    evidence:
+      status: "NOT_EVALUATED"
+      source_revision: null
+      test_report: null
+      environment_revision: null
+    authorization:
+      development: "GRANTED"
+      integration: "APPROVAL_REQUIRED"
+      deployment: "NOT_GRANTED"
+    resume_conditions:
+      - "Acceptance supported by version-specific evidence"
+      - "Integration authorized and verified"
+      - "Parent checkpoint reconstructable"
+      - "Relevant drift checks pass"
+  - id: "RC-SCHED"
+    parent_loop: "CONTROL-ACTION"
+    enabling_loop: "ISOLATED-SCHEDULING"
+    required_capability:
+      description: "Bounded scheduling separation between control and maintenance work"
+      interface: "IsolatedTaskRouting"
+    acceptance:
+      - "Control/maintenance contention scenario reproducibly tested"
+      - "Control behavior meets host project's separately documented criterion"
+      - "Maintenance workload regression tests pass"
+      - "No unapproved infrastructure or production modifications"
+    evidence:
+      status: "NOT_EVALUATED"
+      source_revision: null
+      test_report: null
+      environment_revision: null
+    authorization:
+      development: "GRANTED"
+      integration: "APPROVAL_REQUIRED"
+      deployment: "NOT_GRANTED"
+    resume_conditions:
+      - "RC-OBS accepted where still applicable"
+      - "Acceptance supported by version-specific evidence"
+      - "Integration authorized and verified"
+      - "Parent checkpoint reconstructable"
+      - "Relevant drift checks pass"

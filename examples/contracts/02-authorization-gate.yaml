@@ -1,0 +1,35 @@
+# DDLS v2.1 — Synthetic gate state, NOT a deployment approval.
+scenario: "02-deployment-gate"
+synthetic: true
+reference_case: "../case-studies/02-deployment-gate.md"
+development_loop:
+  id: "UPDATE-WORKFLOW"
+  role: "PRIMARY"
+  state: "PLANNED"  # COMPLETED requires independent evidence
+  delivery_state: "NOT_SUBMITTED"
+rollout_work_item:
+  id: "AUTHORIZE-ROLLOUT"
+  state: "WAITING_EXTERNAL"
+  proposed_action: "Deploy generic service-update workflow to an authorized target"
+authorization:
+  development: "GRANTED"
+  integration: "APPROVAL_REQUIRED"
+  deployment: "NOT_GRANTED"
+  operational_actions: "NOT_GRANTED"
+gate:
+  readiness: "PENDING"
+  compatibility_status: "NOT_EVALUATED"
+  required_evidence:
+    - "Authorized target state and version verification"
+    - "Supported transition and recovery path"
+    - "Artifact compatibility and evidence freshness"
+    - "Explicit approval scoped to target and action"
+  evidence_references: []
+  approver_reference: null
+  deployment_executed: false
+  permitted_next_action: "WAIT_OR_ESCALATE_FOR_AUTHORIZED_REVIEW"
+  forbidden_without_approval:
+    - "deploy"
+    - "migrate"
+    - "restore"
+    - "alter_target_state"
