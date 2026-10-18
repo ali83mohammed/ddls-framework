@@ -1,0 +1,81 @@
+DDLS v2.1 — Licensing and Attribution
+==================================
+
+Copyright © 2026 Ali Mohammed.
+
+DDLS uses two permissive licenses, mapped to the materials below. Each file
+is subject to the license assigned to its path. This file is an explanatory
+license map; it does not add conditions to either underlying license.
+
+1. FRAMEWORK DOCUMENTATION — Creative Commons Attribution 4.0 International
+   (CC BY 4.0)
+
+   Applies to:
+   - README.md, CHANGELOG.md, CONTRIBUTING.md, ATTRIBUTION.md
+   - docs/**
+   - examples/**
+
+   You may share, translate, adapt, and distribute this material, including
+   commercially, provided you comply with the CC BY 4.0 attribution and other
+   terms. Credit the original author, include the applicable license link,
+   and indicate changes when redistributing adapted material.
+
+   Official full legal text:
+   https://creativecommons.org/licenses/by/4.0/legalcode.en
+
+   Included reference copy:
+   licenses/CC-BY-4.0-legalcode.html
+
+2. DEVELOPER INTEGRATION MATERIALS — Apache License, Version 2.0
+   (Apache-2.0)
+
+   Applies to:
+   - AGENTS.md
+   - prompts/**
+   - templates/**
+   - .github/**
+
+   You may use, adapt, redistribute, and incorporate these materials into
+   open-source or proprietary projects, including commercial software, subject
+   to the Apache-2.0 terms. Where applicable, retain license, copyright, and
+   attribution notices, state modifications, and preserve the NOTICE content.
+
+   Official full legal text:
+   https://www.apache.org/licenses/LICENSE-2.0
+
+   Included full license text:
+   licenses/Apache-2.0.txt
+
+3. LICENSE AND NOTICE FILES
+
+   This LICENSE file is a license map. NOTICE supplies attribution under
+   Apache-2.0; it does not introduce new license restrictions. The included
+   official legal texts remain governed by their original issuing bodies.
+
+4. FUTURE CODE
+
+   Independent authors may implement the DDLS ideas using any technology and
+   may choose their own software license. Future executable code published by
+   the DDLS repository should explicitly state its license, with Apache-2.0
+   as the project's intended default unless separately indicated.
+
+5. ATTRIBUTION AND INDEPENDENT IMPLEMENTATIONS
+
+   Preferred acknowledgement:
+   "Based on DDLS (Dependency-Driven Loop Shifting), originally conceived and
+   authored by Ali Mohammed (2026)."
+
+   The license attribution obligations apply to redistribution/adaptation of
+   the licensed materials. Merely implementing abstract methods or ideas
+   independently does not necessarily trigger copyright-license attribution.
+   Credit for independent implementations is requested as a professional
+   acknowledgement, not claimed as an additional license obligation.
+
+   Attribution does not imply sponsorship or endorsement by the author.
+
+6. WARRANTIES AND OTHER RIGHTS
+
+   The relevant full license text controls in case of conflict with this map.
+   No trademark rights or rights in third-party content are granted by this
+   license map. Materials are provided without warranties to the extent
+   provided by their respective licenses.

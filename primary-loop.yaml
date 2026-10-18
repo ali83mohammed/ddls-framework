@@ -1,0 +1,34 @@
+# DDLS v2.1 — Primary Loop Contract
+# Example values only; replace them for the actual project.
+# Never put credentials or private keys in DDLS records.
+ddls_version: "2.1"
+loop:
+  id: "BACKUP-V2"
+  role: "PRIMARY"
+  state: "PLANNED"
+  objective: "Implement incremental backup"
+  owner: "<engineer-or-agent-id>"
+scope:
+  allowed:
+    - "backup service"
+    - "backup tests"
+    - "required interfaces"
+  prohibited:
+    - "production deployment"
+    - "network configuration changes"
+    - "unrelated refactoring"
+acceptance:
+  - "Incremental backup succeeds"
+  - "Restore compatibility verified"
+  - "Existing regression tests pass"
+retry_policy:
+  max_similar_attempts_per_hypothesis: 3
+  material_new_evidence_required_to_reset: true
+stop_conditions:
+  - "Safety or authorization boundary violated"
+  - "No safe authorized resolution remains"
+authority:
+  development: "GRANTED"
+  integration: "APPROVAL_REQUIRED"
+  deployment: "NOT_GRANTED"
+  operational_actions: "NOT_GRANTED"

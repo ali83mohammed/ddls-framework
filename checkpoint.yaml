@@ -1,0 +1,32 @@
+# DDLS v2.1 — Recoverable Checkpoint
+# For uncommitted work, reference a saved patch/branch/commit, not memory alone.
+checkpoint:
+  id: "CP-BACKUP-V2-001"
+  loop_id: "BACKUP-V2"
+  source_revision: "<immutable-commit-sha>"
+  working_tree: "CLEAN_OR_CAPTURED"
+  unmerged_changes_reference: "<branch-commit-or-safely-stored-patch>"
+  restoration_verified: false
+  implementation_status:
+    completed:
+      - "<completed-work>"
+    pending:
+      - "<next-task>"
+  evidence:
+    passing_tests:
+      - "<test-result-reference>"
+    failing_tests: []
+    failed_approaches:
+      - hypothesis: "<attempted-root-cause>"
+        outcome: "<why-it-failed>"
+        evidence_reference: "<log-or-test-reference>"
+  constraints:
+    - "No production mutation"
+  decisions: []
+  dependencies:
+    - "PACKAGE-VERIFY"
+  parent_return_contract: "RC-001"
+  environment:
+    schema_version: "<if-applicable>"
+    runtime_revision: "<if-applicable>"
+  current_authority_reference: "<authorization-record>"

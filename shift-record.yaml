@@ -1,0 +1,34 @@
+# DDLS v2.1 — Shift Record
+# Create for a material dependency-driven shift, not every ordinary bug.
+ddls_shift:
+  id: "SHIFT-001"
+  parent_loop: "BACKUP-V2"
+  enabling_loop: "PACKAGE-VERIFY"
+  blocker:
+    category: "CAPABILITY"
+    description: "Integrity verification capability is missing"
+    evidence:
+      - "<test-or-repository-evidence-reference>"
+    impact: "Backup acceptance cannot establish package integrity"
+  decision:
+    action: "SHIFT"
+    reason: "Required capability cannot be safely added within the approved parent scope"
+    alternatives_considered:
+      - "Local fix (rejected: foundational shared behavior)"
+  checkpoint:
+    source_revision: "<immutable-commit-sha>"
+    reference: "<checkpoint-path-or-id>"
+    restoration_verified: false
+  return_contract: "RC-001"
+  execution:
+    owner: "<engineer-or-agent-id>"
+    max_similar_retries: 3
+    scope:
+      - "package verification module"
+      - "verification tests"
+  authority:
+    development: "GRANTED"
+    integration: "APPROVAL_REQUIRED"
+    deployment: "NOT_GRANTED"
+    operational_actions: "NOT_GRANTED"
+  status: "PLANNED"

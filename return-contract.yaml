@@ -1,0 +1,40 @@
+# DDLS v2.1 — Return Contract
+# Acceptance must be tied to actual, version-specific evidence.
+return_contract:
+  id: "RC-001"
+  parent_loop: "BACKUP-V2"
+  enabling_loop: "PACKAGE-VERIFY"
+  required_capability:
+    description: "Verify package integrity"
+    interface: "PackageVerificationService"
+  acceptance:
+    - "Valid packages accepted"
+    - "Tampered packages rejected"
+    - "Invalid signatures rejected"
+  compatibility:
+    - "Existing backup format preserved"
+  prohibited_changes:
+    - "No production mutation"
+    - "No security bypass"
+  evidence:
+    - kind: "tests"
+      reference: "<test-report>"
+      source_revision: "<tested-commit-sha>"
+      environment_revision: "<tested-environment>"
+    - kind: "integration"
+      reference: "<integration-report>"
+      source_revision: "<integrated-commit-sha>"
+      environment_revision: "<integration-environment>"
+  authorization:
+    integration: "APPROVAL_REQUIRED"
+    deployment: "NOT_GRANTED"
+  resume_conditions:
+    - "Capability accepted"
+    - "Required integration complete"
+    - "Parent checkpoint restored"
+    - "Relevant drift checks passed"
+  invalidation_triggers:
+    - "Interface incompatibility"
+    - "Failed regression"
+    - "Changed security assumptions"
+  acceptance_status: "NOT_EVALUATED"
