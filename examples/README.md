@@ -15,6 +15,13 @@ The case studies do not require access to any private repository. Use the [curre
 | [03 — The blocker that did not require a shift](case-studies/03-no-shift-required.md) | `DIAGNOSE → WAIT → CONTINUE` | Diagnose external capabilities before creating unnecessary enabling code | [Diagnostic decision](contracts/03-diagnostic-decision.yaml) |
 | [04 — Excessive process overhead](case-studies/04-overhead-counterexample.md) | `FIX` in TRANSPARENT mode | Why unnecessary DDLS paperwork is itself a failure mode | No YAML required |
 
+| [05 — Reboot persistence](case-studies/05-reboot-persistence-and-readiness.md) | `DIAGNOSE / STOP / conditional SHIFT` | Separate controller readiness from auxiliary boot durability | Case study |
+| [06 — Finalized installation upgrade](case-studies/06-finalized-installation-upgrade.md) | `REPLAN / STOP` | Preserve finalized lifecycle history | Case study |
+| [07 — Approval contract compatibility](case-studies/07-approval-contract-compatibility.md) | `DIAGNOSE / FIX / conditional SHIFT` | Distinguish schema, bytes and authorization | Case study |
+| [08 — Evidence-driven queue isolation](case-studies/08-evidence-driven-queue-isolation.md) | `DIAGNOSE / conditional SHIFT` | Prove cause before topology change | Case study |
+| [09 — Development not production authority](case-studies/09-development-qualified-not-production-authorized.md) | `STOP / WAIT` | Separate development from production gates | Case study |
+| [10 — Partial recovery](case-studies/10-partial-recovery-unresolved-objective.md) | `STOP / conditional SHIFT` | Do not close the parent when a child is still blocked | Case study |
+
 The earlier [backup-package verification walkthrough](backup-package-verification.md) remains available as a shorter linear-SHIFT introduction.
 
 ## How to read a case
