@@ -1,0 +1,31 @@
+# DDLS v2.2 — OPTIONAL objective-level resource envelope example.
+# This is a human/agent record, not a validator, metering source, or permission grant.
+# Never fabricate token/cost usage: UNKNOWN means no reliable meter is available.
+ddls_version: "2.2"
+objective_id: "EXAMPLE-OBJECTIVE"
+governance_mode: "MANAGED_SHIFT"
+policy:
+  max_similar_attempts_per_hypothesis: 3
+  review_at_active_depth: 3        # includes parent
+  review_at_total_child_shifts: 2  # across the same original objective
+  max_parallel_agents: null        # owner sets if relevant
+  wall_time_limit_minutes: null    # owner sets when appropriate
+  tool_call_limit: null            # owner sets when measurable
+  token_limit: null                # only with trustworthy metering
+  cost_limit: null                 # only with trustworthy metering
+  on_exhaustion: "STOP_AND_ESCALATE"
+tracking:
+  usage_telemetry: "UNKNOWN"
+  token_consumption: null
+  cost_consumption: null
+  tool_calls_consumed: null
+  total_child_shifts: 0
+  current_active_depth: 1
+  progress_evidence: []
+  last_review: "NOT_EVALUATED"
+allocations:
+  resume_and_validation_reserve: "REQUIRED"
+  child_allocations: []
+authority:
+  budget_change: "APPROVAL_REQUIRED"
+  deployment: "NOT_GRANTED"

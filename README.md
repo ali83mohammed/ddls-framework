@@ -2,7 +2,7 @@
 
 **A practical engineering playbook for dependency-aware software development with AI coding agents.**
 
-**Version:** 2.1 — Agent Reliability & Execution Safety  
+**Version:** 2.2 — Adaptive Workflow & Bounded Agent Execution  
 **Framework author:** Ali Mohammed  
 **Year:** 2026  
 **Official repository:** https://github.com/ali83mohammed/ddls-framework
@@ -21,7 +21,8 @@ DDLS does not require a shift for every bug. Routine issues stay within the curr
 
 | Resource | Use it for |
 |---|---|
-| [Full DDLS v2.1 playbook](docs/DDLS-v2.1.md) | Normative day-to-day workflow and engineering rules |
+| [Full DDLS v2.2 playbook](docs/DDLS-v2.2.md) | Current daily workflow and engineering rules |
+| [DDLS v2.1 archive](docs/DDLS-v2.1.md) | Previous release, preserved for reference |
 | [Quickstart](docs/QUICKSTART.md) | A short decision procedure and worked flow |
 | [AGENTS.md](AGENTS.md) | Standing instructions for AI coding agents |
 | [Task-start prompt](prompts/task-start.md) | Scope, acceptance, and authority for a particular task |
@@ -53,13 +54,19 @@ flowchart TD
     J --> K[RESUME parent loop]
 ```
 
+## v2.2: light by default
+
+**TRANSPARENT** is the default: normal coding and a brief result, without required YAML or loop records. Use **MANAGED_SHIFT** only for a qualified missing prerequisite, with a short return contract recorded in an existing ticket or PR. Use **GOVERNED** for high-risk architecture or production-sensitive work, even without a shift.
+
+For AI-assisted enabling work, use a **single objective-level resource envelope**: child loops do not receive a new budget. Review progress before adding another loop; report token or cost consumption as **UNKNOWN** if the host provides no reliable meter. No CLI or validator is included in this release.
+
 ## Five-minute adoption
 
 1. **Set the objective.** Define allowed scope, prohibited changes, acceptance criteria, and authorities using [task-start.md](prompts/task-start.md).
 2. **Work normally.** Fix routine problems without opening new loops.
 3. **Qualify blockers.** Shift only when evidence establishes a missing prerequisite that cannot be resolved safely within scope.
-4. **Checkpoint and contract.** Save reconstructable state; write the enabling loop's return contract.
-5. **Verify and resume.** Confirm acceptance, integration authority, drift, and parent readiness before continuing.
+4. **Checkpoint and contract on a real shift.** Reuse your PR or issue. Allocate time, tool, and available token/cost limits from the original objective, reserving enough for parent resumption.
+5. **Review progress and resume.** Stop unproductive nested shifts or budget exhaustion. Confirm acceptance, integration authority, relevant drift, and parent readiness.
 
 **Default retry recommendation:** No more than three substantially similar repair attempts per hypothesis without material new evidence. This is configurable, and critical safety or authorization violations require immediate stopping.
 

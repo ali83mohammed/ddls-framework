@@ -1,47 +1,46 @@
-# DDLS v2.1 — Task Start Contract
+# DDLS v2.2 — Lightweight Task Start Prompt
 
-Copy this into an AI coding agent task and complete the placeholders. The standing rules are in [`../AGENTS.md`](../AGENTS.md).
+Paste and fill only relevant sections. For routine tasks, a one-sentence objective and constraints are enough. The standing guidance lives in [AGENTS.md](../AGENTS.md).
 
 ```text
-Operate under DDLS v2.1.
+Operate under DDLS v2.2.
 
-PRIMARY OBJECTIVE:
-[Exact target outcome]
+OBJECTIVE:
+[What must work?]
 
-ALLOWED SCOPE:
-[Files, modules, services, and environments you may modify]
+SCOPE AND PROHIBITIONS:
+[Relevant allowed changes and hard limits]
 
-PROHIBITED CHANGES:
-[Protected resources, changes, or operations]
-
-ACCEPTANCE CRITERIA:
-[Specific automated tests, observed behavior, and evidence]
+ACCEPTANCE:
+[What must be demonstrated, and how?]
 
 AUTHORITY:
-- Development: [GRANTED / NOT_GRANTED]
-- Integration: [GRANTED / APPROVAL_REQUIRED / NOT_GRANTED]
-- Deployment: [GRANTED / APPROVAL_REQUIRED / NOT_GRANTED]
-- Operational actions: [GRANTED / APPROVAL_REQUIRED / NOT_GRANTED]
+[Allowed actions; integration, deployment, and operational permissions are separate]
 
-STOP CONDITIONS:
-[Events that require stopping or escalation]
+DEFAULT MODE: TRANSPARENT.
+Fix ordinary problems without DDLS YAML or extra loops.
 
-EXECUTION REQUIREMENTS:
-- Fix ordinary local issues within scope.
-- Qualify a missing dependency with evidence before shifting.
-- Use a default maximum of 3 substantially similar repair
-  attempts per root-cause hypothesis unless authorized otherwise.
-- Freeze with a recoverable checkpoint and explicit Return Contract.
-- Preserve relevant negative evidence in a distilled context.
-- Resolve circular dependencies through replanning rather than
-  repeated nested loops.
-- Separate development completion from integration and deployment.
-- Verify acceptance, relevant drift, and authorization before resume.
-- Inventory side effects before any cleanup or rollback.
-- Stop and report when safe completion is not authorized or possible.
+If an evidenced missing prerequisite blocks acceptance:
+- Select MANAGED_SHIFT, or GOVERNED if risk requires it.
+- Preserve a recoverable checkpoint and concise return conditions.
+- Reuse the current issue, PR, or task notes when possible.
+- Allocate any child work from the remaining parent objective budget.
+- Reserve time/tools for integration, regression testing, and resumption.
+- Review evidence-backed progress before additional shifts.
+- Default review thresholds: 3 similar repairs per hypothesis,
+  3 active nested levels including the parent, and 2 child shifts
+  for one objective. Never assume unlimited model budget.
+- Use real usage telemetry if available; otherwise report UNKNOWN.
+- STOP / REPLAN / ESCALATE for exhausted budget or absent progress.
+- Never infer deployment, operational authorization, or test PASS.
+- Verify return conditions and relevant drift before RESUME.
 
 REPORT:
-State / Work completed / Blockers / Evidence / Tests /
-Revisions / Side effects / Authorization / Risks /
-Next permitted action.
+Ordinary: Result / Tests / Changes / Risks / Next action.
+Shift: Parent / Evidence / Child / Checkpoint / Return conditions /
+Remaining budget / Next gate.
+Governed: additionally authorities, evidence provenance, side
+effects, drift, recovery, and unresolved risks.
 ```
+
+This prompt is operational guidance, not an enforcement or metering mechanism.

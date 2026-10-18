@@ -1,43 +1,39 @@
-# DDLS v2.1 — Standing Agent Instructions
+# DDLS v2.2 — Standing Agent Instructions
 
 > Licensed under Apache License 2.0. Original DDLS framework: Ali Mohammed (2026). See [LICENSE](LICENSE) and [NOTICE](NOTICE).
 
-This file is the **condensed operational policy** for coding agents working in this repository. For the complete rules, consult [`docs/DDLS-v2.1.md`](docs/DDLS-v2.1.md).
+These are the concise operational instructions for agents acting in this repository. The governing playbook is [DDLS v2.2](docs/DDLS-v2.2.md). Combine these rules with the target project's existing stronger policies.
 
-If adapting DDLS to a different codebase, merge these instructions with that project's existing policies and supply a task-specific contract. Do not replace stronger project restrictions with generic DDLS examples.
+## Default: be lightweight
 
-## Mission
+- Default to **TRANSPARENT**: work normally on local bugs and low-risk tasks. **Do not create DDLS YAML, shift records, or extra loops for ordinary fixes.**
+- Preserve the authorized objective, scope, acceptance, stop conditions, and current permissions.
+- Use **MANAGED_SHIFT** only for an evidenced missing prerequisite requiring independent work. Reuse an issue/PR/checkpoint and concise return conditions.
+- Use **GOVERNED** for security-sensitive, production, irreversible, high-impact architectural, or shared-state multi-agent work — whether or not a SHIFT occurs.
 
-Complete only the authorized development objective. Preserve architectural integrity, verified evidence, recoverable state, and environment boundaries.
+## Dependency and budget discipline
 
-## Before changing code
+1. Diagnose before shifting; missing authorization and external conditions often require WAIT or ESCALATE, not new code.
+2. Track a **single objective-level execution envelope** when enabling work is material. Nested/parallel loops get sub-allocations; they do **not** reset the parent's cumulative time, tools, tokens, cost, or shift limits.
+3. Reserve capacity for integration, regression verification, and resuming the primary loop.
+4. Default similar repair budget: **3 attempts per unchanged hypothesis**. Review before exceeding **3 active levels including the primary loop** or **2 total child shifts per objective**. These are review thresholds and may be changed only within explicit authority.
+5. Assess evidence-backed progress after every enabling loop and before spawning another child. Stop, replan, or escalate if progress is absent or the budget is exhausted.
+6. Use trustworthy provider cost/token telemetry when available. Otherwise mark them `UNKNOWN`, use configured tool/time/shift limits, and request review before significant expansion. Never invent usage numbers.
+7. When multiple agents run, enforce explicit scope, file/shared-resource ownership, isolation, and aggregate budget — not merely per-agent limits.
 
-1. Confirm objective, accepted outcome, allowed scope, prohibited changes, and stop conditions.
-2. Identify development, integration, deployment, and operational authorities **separately**.
-3. If any critical authority or constraint is undefined, do not assume it is granted.
+## Safety, checkpoint, and evidence
 
-## During work
+1. Before a real shift, preserve a recoverable checkpoint, negative evidence, inherited prohibitions, and measurable return conditions. Prefer existing tickets/PRs to new paperwork.
+2. Validate return conditions with real test/evidence references. Do not elevate self-reported `PASS` or `APPROVED` to verified truth.
+3. Recheck relevant source, contract, schema, runtime, authority, and evidence drift before resume.
+4. Development authority never implies permission to merge, deploy, migrate, restore, delete, rotate keys, or alter infrastructure.
+5. Never automatically roll back shared, production, or irreversible state. Inventory effects and seek appropriate recovery authority.
+6. If an authorized engineer changes the plan or stops work, reevaluate ongoing actions and authorization before further changes.
 
-1. `FIX` normal local defects within scope; do not shift for routine issues.
-2. `DIAGNOSE` unclear blockers and collect evidence before proposing `SHIFT`.
-3. Apply an evidence-aware retry budget: default maximum **3 substantially similar repair attempts per hypothesis**. Reset only on material new evidence and subject to total resource constraints.
-4. Stop immediately for critical security/safety/authorization violations.
-5. Before suspending a task, create a **verified recoverable checkpoint** of source and relevant state.
-6. Define a measurable **Return Contract** before substantive enabling work.
-7. Keep enabling work minimally sufficient, scoped, isolated, and testable.
-8. Preserve relevant failed approaches, constraints, and decisions in a **distilled context package**; do not simply delete them.
-9. Detect hard-dependency cycles, shared prerequisites, and resource conflicts. Do not spawn unlimited nested loops.
-10. For parallel agents, require explicit ownership, isolation, compatible contracts, and shared-resource controls.
-11. Never change acceptance criteria, remove failing tests, weaken permissions, or broaden architectural scope without the required authority.
-12. Do not infer merge, deploy, migration, restore, key rotation, deletion, or infrastructure authority from permission to edit source.
-13. Before resuming a parent, check return-contract acceptance, authorized integration status, source/contract/schema/runtime/authority drift where relevant, and evidence freshness.
-14. On failure, inventory side effects first. Never automatically roll back shared, irreversible, or production state.
-15. If a human stops or redirects work, reevaluate active operations and authorization before any further impactful action.
+## Report proportionally
 
-## Output format
+- **Ordinary work:** Result / Tests / Changes / Risks / Next action.
+- **Managed shift:** Parent / Blocker evidence / Child / Checkpoint / Return conditions / Remaining budget / Next gate.
+- **Governed work:** Add evidence provenance, authorities, drift, side effects, and recovery status.
 
-Report: current loop/state; completed work; blockers and evidence; decisions; child loops; checkpoint/source revision; tests and drift; side effects and recovery; authorities; residual risks; next permitted action.
-
-For small local fixes, a brief result/tests/changes/risks report is sufficient.
-
-**Do not fabricate test results, source revisions, authorization, deployment status, or success.**
+**These text instructions do not constitute a tool-enforced budget, validator, or security boundary.** Never fabricate measurements, tests, permission, or outcomes.

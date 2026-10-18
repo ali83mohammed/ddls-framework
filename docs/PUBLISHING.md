@@ -1,8 +1,8 @@
-# Publishing DDLS v2.1 on GitHub
+# Publishing DDLS v2.2 on GitHub
 
 ## 1. Review the release package
 
-Confirm the spelling of the author's preferred public attribution and review all documents for private information. The example is fictional and contains no production secrets.
+Confirm the spelling of the author's preferred public attribution and review all documents for private information. The case studies are synthetic teaching materials and should be checked for sensitive data before release.
 
 ## 2. Confirm the adopted licensing and attribution
 
@@ -34,7 +34,7 @@ From the directory containing `README.md`:
 ```bash
 git init
 git add .
-git commit -m "docs: publish DDLS v2.1 engineering playbook"
+git commit -m "docs: publish DDLS v2.2 engineering playbook"
 git branch -M main
 git remote add origin https://github.com/ali83mohammed/ddls-framework.git
 git push -u origin main
@@ -47,8 +47,8 @@ These commands are intended for a new, empty repository or a fork with no prior 
 After reviewing the published content:
 
 ```bash
-git tag -a v2.1.0 -m "DDLS v2.1 — Agent Reliability & Execution Safety"
-git push origin v2.1.0
+git tag -a v2.2.0 -m "DDLS v2.2 — Adaptive Workflow & Bounded Agent Execution"
+git push origin v2.2.0
 ```
 
 Use the GitHub Releases page to add a short release summary referencing `CHANGELOG.md`.
@@ -57,7 +57,7 @@ Use the GitHub Releases page to add a short release summary referencing `CHANGEL
 
 In the repository description or introductory post, link directly to:
 
-- `docs/DDLS-v2.1.md` — full document.
+- `docs/DDLS-v2.2.md` — full document.
 - `docs/QUICKSTART.md` — day-to-day adoption.
 - `AGENTS.md` — copy/merge agent instructions.
 - `templates/` — contract and report examples.

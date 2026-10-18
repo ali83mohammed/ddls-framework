@@ -1,5 +1,6 @@
-# DDLS v2.1 — Return Contract
-# Acceptance must be tied to actual, version-specific evidence.
+# DDLS v2.2 — Return Contract
+# OPTIONAL for GOVERNED workflows; a concise return condition suffices for MANAGED_SHIFT.
+# Acceptance must be supported by version-specific evidence; never self-certify PASS.
 return_contract:
   id: "RC-001"
   parent_loop: "BACKUP-V2"

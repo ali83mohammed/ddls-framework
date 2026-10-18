@@ -4,7 +4,7 @@ These examples show how an engineer or an AI coding agent can **choose the appro
 
 > **Disclosure and source protection:** All scenarios, names, identifiers, artifacts, system relationships, and decision traces in this directory are **synthetic teaching materials**. They are informed by general patterns found in complex software systems. They are **not** reproductions, verified incident reports, benchmark results, proprietary source code, private configuration, or evidence from a specific product. Placeholder evidence is not proof that tests ran.
 
-The case studies do not require access to any private repository. Use the [full DDLS playbook](../docs/DDLS-v2.1.md) as the governing reference; these examples illustrate its decisions and are not machine-enforced policies.
+The case studies do not require access to any private repository. Use the [current DDLS v2.2 playbook](../docs/DDLS-v2.2.md) as the governing reference. These synthetic cases were authored under v2.1; their decisions remain educational examples rather than machine-enforced policies. v2.2 adds lightweight governance modes and shared budget rules; the earlier case narratives do not claim to demonstrate measured token usage.
 
 ## Case-study index
 

@@ -1,13 +1,15 @@
-# DDLS v2.1 — Primary Loop Contract
+# DDLS v2.2 — Primary Loop Contract
 # Example values only; replace them for the actual project.
-# Never put credentials or private keys in DDLS records.
-ddls_version: "2.1"
+# OPTIONAL: use for GOVERNED work or when your project requires structured records.
+# TRANSPARENT work does NOT need YAML. Never store credentials/private keys.
+ddls_version: "2.2"
 loop:
   id: "BACKUP-V2"
   role: "PRIMARY"
   state: "PLANNED"
   objective: "Implement incremental backup"
   owner: "<engineer-or-agent-id>"
+  governance_mode: "GOVERNED"  # TRANSPARENT is normally the default
 scope:
   allowed:
     - "backup service"

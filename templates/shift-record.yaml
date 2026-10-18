@@ -1,5 +1,6 @@
-# DDLS v2.1 — Shift Record
-# Create for a material dependency-driven shift, not every ordinary bug.
+# DDLS v2.2 — Shift Record
+# OPTIONAL: Managed shifts may use short issue/PR notes instead of YAML.
+# Do not create for ordinary bugs; no record itself proves a test or approval.
 ddls_shift:
   id: "SHIFT-001"
   parent_loop: "BACKUP-V2"
@@ -23,6 +24,10 @@ ddls_shift:
   execution:
     owner: "<engineer-or-agent-id>"
     max_similar_retries: 3
+    parent_budget_reference: "<objective-envelope-or-task-record>"
+    child_allocation_reference: "<bounded-sub-allocation>"
+    reserve_for_parent_resume: "REQUIRED"
+    usage_telemetry: "UNKNOWN"
     scope:
       - "package verification module"
       - "verification tests"

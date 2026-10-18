@@ -1,6 +1,8 @@
 # DDLS Execution Report
 
-**DDLS version:** 2.1  
+> **Optional for GOVERNED work.** For ordinary work, use: Result / Tests / Changes / Risks / Next action.
+
+**DDLS version:** 2.2  
 **Report date:** `<ISO-8601 timestamp>`
 
 ## Loop identity
@@ -44,6 +46,16 @@
 - **Integration authority:**
 - **Deployment authority:**
 - **Operational authority:**
+
+## Objective-level budget and progress
+
+- **Governance mode:**
+- **Parent objective budget reference:**
+- **Budget used / remaining (by metered dimension):**
+- **Unmetered dimensions (UNKNOWN):**
+- **Child allocations and reserved return capacity:**
+- **Evidence-backed progress at last gate:**
+- **Further SHIFT authorized?**
 
 ## Outcome
 

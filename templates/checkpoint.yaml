@@ -1,4 +1,5 @@
-# DDLS v2.1 — Recoverable Checkpoint
+# DDLS v2.2 — Recoverable Checkpoint
+# OPTIONAL for formal/complex work. Short managed shifts may reuse existing PR/issue notes.
 # For uncommitted work, reference a saved patch/branch/commit, not memory alone.
 checkpoint:
   id: "CP-BACKUP-V2-001"

@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.2] — 2026-10-18 — Adaptive Workflow & Bounded Agent Execution
+
+- Made TRANSPARENT governance the default for normal work; no mandatory YAML or loop paperwork for ordinary fixes.
+- Added MANAGED_SHIFT and GOVERNED modes, selected by blocker and risk rather than task count.
+- Introduced an objective-level, non-replenishing execution budget shared by nested and parallel agents, with protected resumption reserve.
+- Added progress gates, suggested review thresholds for depth and total shifts, and evidence-aware retry controls.
+- Clarified that tokens/costs must come from trustworthy metering and otherwise remain UNKNOWN; agent self-reports are not technical enforcement.
+- Simplified the quickstart, standing agent rules, task prompt, and optional templates. Preserved v2.1 documentation as a historical reference.
+- Explicitly excluded a CLI, validator, and ddls-check from this release.
+- Maintained the existing dual-license policy and original author attribution.
+
 ## [Unreleased] — Documentation examples
 
 - Added three fully synthetic DDLS v2.1 case studies covering nested enabling work, a blocked deployment gate, and correct no-shift diagnosis.
