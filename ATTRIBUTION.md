@@ -1,14 +1,16 @@
 # Attribution Guide
 
 **Original framework:** DDLS — Dependency-Driven Loop Shifting  
-**Originally conceived and authored by:** Ali Mohammed (2026)
+**Originally conceived and authored by:** Ali Mohammed (2026)  
+**Official source repository:** https://github.com/ali83mohammed/ddls-framework
 
 ## Recommended credit
 
 > Based on DDLS (Dependency-Driven Loop Shifting), originally conceived and authored by Ali Mohammed (2026).
 
 When publishing adapted DDLS documentation, include a link to the original
-repository **once its public URL exists**, identify material changes, and link
+repository at https://github.com/ali83mohammed/ddls-framework,
+identify material changes, and link
 to [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
 For derivative works that redistribute Apache-2.0-licensed integration files,

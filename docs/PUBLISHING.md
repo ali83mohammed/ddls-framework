@@ -13,8 +13,8 @@ Licensing is already defined; **do not replace it with an all-rights-reserved no
 - [NOTICE](../NOTICE) carries the Apache-2.0 attribution notice.
 - Complete reference texts are in `licenses/`; the controlling canonical texts are linked from LICENSE.
 
-When publishing, replace no author identity, and add the actual GitHub URL to
-attribution examples or future editions once known. Do not imply that
+The official source repository is https://github.com/ali83mohammed/ddls-framework.
+Preserve this attribution when publishing derivatives. Do not imply that
 independent implementations of abstract ideas have additional legal duties
 beyond the applicable licenses.
 
@@ -36,11 +36,11 @@ git init
 git add .
 git commit -m "docs: publish DDLS v2.1 engineering playbook"
 git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/ddls-framework.git
+git remote add origin https://github.com/ali83mohammed/ddls-framework.git
 git push -u origin main
 ```
 
-Replace `YOUR-USERNAME`. These commands assume a new, empty GitHub repository; if GitHub has already created an initial commit, fetch and reconcile it rather than force-pushing.
+These commands are intended for a new, empty repository or a fork with no prior commits. For an already-published repository, use normal commits and pulls; never force-push merely to repeat initial setup.
 
 ## 5. Tag the release
 

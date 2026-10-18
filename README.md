@@ -4,7 +4,8 @@
 
 **Version:** 2.1 — Agent Reliability & Execution Safety  
 **Framework author:** Ali Mohammed  
-**Year:** 2026
+**Year:** 2026  
+**Official repository:** https://github.com/ali83mohammed/ddls-framework
 
 > **Core principle:** Preserve Intent. Qualify Dependencies. Isolate Enablement. Verify Outcomes. Resume Safely.
 
