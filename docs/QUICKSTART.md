@@ -1,12 +1,14 @@
 # DDLS v2.2 — Five-Minute Quickstart
 
-The [DDLS v2.2 playbook](DDLS-v2.2.md) governs when details are disputed. This guide is deliberately shorter than an approval workflow.
+Start with the [one-page Core](CORE.md). The [DDLS v2.2 playbook](DDLS-v2.2.md) governs when details are disputed. This guide is deliberately shorter than an approval workflow.
 
 ## 1. Start in TRANSPARENT mode
 
 Describe the objective, constraints, and acceptance in the task as you normally would. Fix local bugs normally. **No YAML, loop registry, or return-contract file is required.**
 
 ## 2. Decide whether the blocker is real
+
+Before SHIFT, answer the [five blocker qualification questions](CORE.md): evidence, classification, authority, smallest remedy, and a falsifiable prediction.
 
 | Observation | Correct next action |
 |---|---|

@@ -2,7 +2,7 @@
 
 > Licensed under Apache License 2.0. Original DDLS framework: Ali Mohammed (2026). See [LICENSE](LICENSE) and [NOTICE](NOTICE).
 
-These are the concise operational instructions for agents acting in this repository. The governing playbook is [DDLS v2.2](docs/DDLS-v2.2.md). Combine these rules with the target project's existing stronger policies.
+These are the concise operational instructions for agents acting in this repository. Start with the [one-page Core](docs/CORE.md). The advanced governing reference is [DDLS v2.2](docs/DDLS-v2.2.md). Combine these rules with the target project's existing stronger policies.
 
 ## Default: be lightweight
 
@@ -13,7 +13,7 @@ These are the concise operational instructions for agents acting in this reposit
 
 ## Dependency and budget discipline
 
-1. Diagnose before shifting; missing authorization and external conditions often require WAIT or ESCALATE, not new code.
+1. Before SHIFT, answer the five Core questions: evidence, defect vs permission/external dependency, authority, minimal change, and a falsifiable prediction. Diagnose before shifting; missing authorization and external conditions often require WAIT or ESCALATE, not new code.
 2. Track a **single objective-level execution envelope** when enabling work is material. Nested/parallel loops get sub-allocations; they do **not** reset the parent's cumulative time, tools, tokens, cost, or shift limits.
 3. Reserve capacity for integration, regression verification, and resuming the primary loop.
 4. Default similar repair budget: **3 attempts per unchanged hypothesis**. Review before exceeding **3 active levels including the primary loop** or **2 total child shifts per objective**. These are review thresholds and may be changed only within explicit authority.

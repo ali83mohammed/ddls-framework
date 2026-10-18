@@ -1,5 +1,14 @@
 # Changelog
 
+## [Unreleased] — v2.2 documentation and evaluation readiness
+
+- Added a one-page Core, explicit falsifiable hypothesis, and five-question blocker qualification gate.
+- Added a proposed controlled evaluation protocol (4 scenarios × 2 arms × 5 runs = 40); **no benchmark runs or results claimed**.
+- Added an enforcement map linking DDLS rules to existing GitHub/host controls without implementing validators or hooks.
+- Added lightweight Codex, Claude Code, and Cursor integration guides and an optional PR SHIFT section.
+- Added a synthetic counterexample showing excessive DDLS overhead and its correct no-SHIFT resolution.
+- Fixed README's stale v2.1 label; retained the full v2.2 reference and existing dual-license mapping.
+
 ## [2.2] — 2026-10-18 — Adaptive Workflow & Bounded Agent Execution
 
 - Made TRANSPARENT governance the default for normal work; no mandatory YAML or loop paperwork for ordinary fixes.

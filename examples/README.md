@@ -14,9 +14,13 @@ The case studies do not require access to any private repository. Use the [curre
 | [02 — Development complete, deployment blocked](case-studies/02-deployment-gate.md) | `STOP / ESCALATE / WAIT` | Development acceptance, integration, and production authorization are separate | [Authorization gate](contracts/02-authorization-gate.yaml) |
 | [03 — The blocker that did not require a shift](case-studies/03-no-shift-required.md) | `DIAGNOSE → WAIT → CONTINUE` | Diagnose external capabilities before creating unnecessary enabling code | [Diagnostic decision](contracts/03-diagnostic-decision.yaml) |
 
+| [04 — Excessive process overhead](case-studies/04-overhead-counterexample.md) | `FIX` in TRANSPARENT mode | Why unnecessary DDLS paperwork is itself a failure mode | No YAML required |
+
 The earlier [backup-package verification walkthrough](backup-package-verification.md) remains available as a shorter linear-SHIFT introduction.
 
 ## How to read a case
+
+Compare each choice against the [five blocker questions](../docs/CORE.md). The existing first three studies are deliberately synthetic; their possible **without-DDLS** shortcuts are counterfactual examples, not observed control-group results. The [evaluation plan](../docs/VALIDATION-PLAN.md) defines how to test real differences.
 
 1. Identify the original objective and the specific evidence required to call something a blocker.
 2. Read the rejected alternatives; DDLS is a **decision discipline**, not a requirement to create extra tasks.

@@ -19,8 +19,17 @@ DDLS does not require a shift for every bug. Routine issues stay within the curr
 
 ## Start here
 
+**Start with the [one-page DDLS Core](docs/CORE.md).** The full playbook is an advanced reference, not mandatory reading for everyday coding. DDLS v2.2 is an **experimental engineering playbook**: its proposed benefits have not yet been established through controlled trials.
+
+**Falsifiable hypothesis:** With identical safety rules and tools, adding DDLS Core improves blocker-decision accuracy, including fewer unjustified SHIFTs and unsupported completion claims, versus a comparable agent without DDLS. See the [proposed evaluation protocol](docs/VALIDATION-PLAN.md); **no experiment results are claimed**.
+
 | Resource | Use it for |
 |---|---|
+| [One-page Core](docs/CORE.md) | Primary developer/agent entry point; decisions and five blocker questions |
+| [Evaluation protocol](docs/VALIDATION-PLAN.md) | Pre-registered-style pilot design: 40 proposed runs, no results |
+| [Enforcement map](docs/ENFORCEMENT-MAP.md) | Existing controls versus instruction-only safeguards |
+| [Integrations](integrations/) | Codex, Claude Code, and Cursor adoption guidance |
+| [Pull-request template](.github/PULL_REQUEST_TEMPLATE.md) | Optional compact SHIFT note for real blockers |
 | [Full DDLS v2.2 playbook](docs/DDLS-v2.2.md) | Current daily workflow and engineering rules |
 | [DDLS v2.1 archive](docs/DDLS-v2.1.md) | Previous release, preserved for reference |
 | [Quickstart](docs/QUICKSTART.md) | A short decision procedure and worked flow |
@@ -105,4 +114,4 @@ Independent implementations of abstract DDLS ideas are welcome under any softwar
 
 ## Version
 
-See [CHANGELOG.md](CHANGELOG.md). This is the **v2.1 operational playbook**, not a certification that all usage scenarios have been experimentally validated.
+See [CHANGELOG.md](CHANGELOG.md). This is the **v2.2 experimental engineering playbook**, not a certification that all usage scenarios have been experimentally validated.

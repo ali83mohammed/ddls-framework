@@ -2,6 +2,10 @@
 
 Contributions that improve clarity, correctness, safety, and daily usability are welcome.
 
+## Evaluation and truthfulness
+
+Contributions that report neutral or negative findings are welcome. Label illustrative scenarios as synthetic, observational reports as observed, and evaluation results as measured. Do not claim a benchmark was executed unless reproducible artifacts and trustworthy evidence exist. The project's [Core](docs/CORE.md) and [evaluation protocol](docs/VALIDATION-PLAN.md) define the current testable hypothesis.
+
 ## What to submit
 
 - A reproducible counterexample where a DDLS rule fails.
