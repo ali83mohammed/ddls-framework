@@ -26,7 +26,7 @@ DDLS does not require a shift for every bug. Routine issues stay within the curr
 | Resource | Use it for |
 |---|---|
 | [One-page Core](docs/CORE.md) | Primary developer/agent entry point; decisions and five blocker questions |
-| [Evaluation protocol](docs/VALIDATION-PLAN.md) | Pre-registered-style pilot design: 40 proposed runs, no results |
+| [Evaluation protocol](docs/VALIDATION-PLAN.md) | Pre-registered-style pilot design: 50 proposed runs, no results |
 | [Enforcement map](docs/ENFORCEMENT-MAP.md) | Existing controls versus instruction-only safeguards |
 | [Integrations](integrations/) | Codex, Claude Code, and Cursor adoption guidance |
 | [Pull-request template](.github/PULL_REQUEST_TEMPLATE.md) | Optional compact SHIFT note for real blockers |

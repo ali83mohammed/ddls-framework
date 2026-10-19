@@ -21,7 +21,7 @@ retain the relevant Apache-2.0 license and attribution notices, including the
 
 **Adapted guide or translation**
 
-> Adapted from DDLS v2.1 by Ali Mohammed (2026). Translated and extended by
+> Adapted from DDLS `<version>` by Ali Mohammed (2026). Translated and extended by
 > [Contributor], [Year]. Licensed under CC BY 4.0. Changes made: [summary].
 
 **Software tool using redistributed DDLS templates**

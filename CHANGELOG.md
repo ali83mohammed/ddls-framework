@@ -4,29 +4,27 @@ All notable changes to DDLS are recorded here, following [Keep a Changelog](http
 
 ## [Unreleased]
 
+## [2.2.0] — 2026-10-19
+
 ### Added
 - One-page DDLS Core, falsifiable working hypothesis, and five-question blocker qualification.
-- Proposed comparison protocol (4 scenarios × 2 groups × 5 runs = 40); **no experiments or results claimed**.
+- Proposed comparison protocol (5 conditions × 2 groups × 5 runs = 50); **no experiments or results claimed**.
 - Enforcement mapping for existing host/repository controls, without introducing a validator, CLI, or hook implementation.
 - Codex, Claude Code, and Cursor adoption guides; optional PR SHIFT template.
-- Synthetic negative example illustrating avoidable DDLS overhead.
+- Risk-proportional TRANSPARENT, MANAGED_SHIFT, and GOVERNED modes.
+- Ten synthetic case studies, companion illustrative contracts, and a case index.
 - Maintainer-facing release checklist for this already published repository.
 
 ### Changed
-- Unified active v2.2 examples, issue template, contributor guidance, and documentation links while keeping the v2.1 historical playbook.
-- Changed LICENSE's title to be version-neutral, preserving both existing licenses and all attribution obligations.
-- Replaced the one-time GitHub publishing tutorial; corrected case-study index formatting and case count.
-
-## [2.2] — 2026-10-18
-
-### Added
-- Risk-proportional TRANSPARENT, MANAGED_SHIFT, and GOVERNED modes.
-- Shared objective-level budget for nested/parallel agent work, with progress gates and return capacity.
-- Three synthetic case studies, companion illustrative contracts, and a case index.
-
-### Changed
+- Added a shared objective-level budget for nested/parallel agent work, with progress gates and return capacity.
 - Clarified that missing trustworthy token/cost telemetry must be reported as UNKNOWN.
 - Preserved v2.1 as an archive; simplified agent instructions and quickstart.
+- Unified active v2.2 examples, issue template, contributor guidance, and documentation links while keeping the v2.1 historical playbook.
+- Made the license map version-neutral and explicitly covered `integrations/**` under Apache-2.0.
+- Made the evaluation conditions and run count internally consistent.
+- Aligned the portable agent contract with the three-active-level review threshold.
+- Corrected case-study index rendering and made the attribution example version-neutral.
+- Replaced the one-time GitHub publishing tutorial with a reusable release-maintenance workflow.
 - Explicitly deferred ddls-check and other enforcement tools.
 - Retained dual licensing and author attribution.
 
