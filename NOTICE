@@ -4,8 +4,8 @@ Copyright 2026 Ali Mohammed
 DDLS was originally conceived and authored by Ali Mohammed in 2026.
 
 This NOTICE accompanies the Apache-2.0-licensed developer integration
-materials (AGENTS.md, prompts/, templates/, and .github/). Distribution of
-qualifying derivatives must preserve the relevant attribution notices in a
-form permitted by Section 4 of Apache License 2.0.
+materials (AGENTS.md, integrations/, prompts/, templates/, and .github/).
+Distribution of qualifying derivatives must preserve the relevant attribution
+notices in a form permitted by Section 4 of Apache License 2.0.
 
 This NOTICE is informational and does not modify either project's license.

@@ -14,7 +14,6 @@ The case studies do not require access to any private repository. Use the [curre
 | [02 — Development complete, deployment blocked](case-studies/02-deployment-gate.md) | `STOP / ESCALATE / WAIT` | Development acceptance, integration, and production authorization are separate | [Authorization gate](contracts/02-authorization-gate.yaml) |
 | [03 — The blocker that did not require a shift](case-studies/03-no-shift-required.md) | `DIAGNOSE → WAIT → CONTINUE` | Diagnose external capabilities before creating unnecessary enabling code | [Diagnostic decision](contracts/03-diagnostic-decision.yaml) |
 | [04 — Excessive process overhead](case-studies/04-overhead-counterexample.md) | `FIX` in TRANSPARENT mode | Why unnecessary DDLS paperwork is itself a failure mode | No YAML required |
-
 | [05 — Reboot persistence](case-studies/05-reboot-persistence-and-readiness.md) | `DIAGNOSE / STOP / conditional SHIFT` | Separate controller readiness from auxiliary boot durability | Case study |
 | [06 — Finalized installation upgrade](case-studies/06-finalized-installation-upgrade.md) | `REPLAN / STOP` | Preserve finalized lifecycle history | Case study |
 | [07 — Approval contract compatibility](case-studies/07-approval-contract-compatibility.md) | `DIAGNOSE / FIX / conditional SHIFT` | Distinguish schema, bytes and authorization | Case study |

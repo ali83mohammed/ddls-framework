@@ -31,6 +31,7 @@ license map; it does not add conditions to either underlying license.
 
    Applies to:
    - AGENTS.md
+   - integrations/**
    - prompts/**
    - templates/**
    - .github/**

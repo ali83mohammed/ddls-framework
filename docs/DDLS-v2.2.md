@@ -825,8 +825,9 @@ BUDGET:
 Use a single objective-level execution envelope. Every child
 receives a sub-allocation; spawning or retrying never refreshes
 the parent's budget. Reserve resources for integration and resume.
-Default: 3 similar attempts per hypothesis; review before 3 active
-nested levels or more than 2 child shifts per original objective.
+Default: 3 similar attempts per hypothesis; review before exceeding
+3 active levels including the primary loop or 2 child shifts per
+original objective.
 Respect project-configured wall-time, tool, token, and cost limits.
 Report UNKNOWN when trusted telemetry is unavailable.
 On exhaustion or no evidence-backed progress: STOP and REPLAN
